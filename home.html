@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="icons">
+            <img src="./Assets/nav.png" alt="Icon Image" />
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="/skill.html">Skill</a>
+            <a href="#">Education</a>
+            <a href="#">Project</a>
+            <a href="#">Recommendation</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <!-- Now this is the turn to to build the home page of the website -->
+    <div class="home">
+        <div class="content">
+            <h3>
+                I'm Rayan Adlard <br><span>Front-end </span>Developer
+            </h3>
+            <div class="home-text">
+                Lorem Ipsum Dolor Sit Amet, Consecteur Adipiscing Elit.Et, Volutpat Feugiat Placerat Lobortis. Natoque
+                Rutrum Semper Sed Suspendisse
+                Nunc Lectus.
+            </div>
+            <button>HIRE ME</button>
+            <div class="text-dot-icons">
+                <span><img src="./Assets/rectaingle.svg"></span>
+                <img src="./Assets/green.svg">
+            </div>
+        </div>
+        <div class="home-image">
+            <div class="dot-green">
+                <img src="./Assets/green.svg">
+                <span><img src="./Assets/orange.svg"></span>
+            </div>
+
+            <img src="./Assets/home.svg">
+
+        </div>
+    </div>
+
+    <!-- Now This is the project component of the website -->
+    <div class="projects">
+        <div class="project-texts">
+            <h1>Projects</h1>
+            <h4>Amet Minim Molit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia<br> Consequat
+                Duis
+                Enim Velit Mollit. Lorem Ipsum</h4>
+        </div>
+        <div id="card-container">
+        </div>
+    </div>
+    
+    <div class="recommendations">
+        <div class="recom-text">
+            <h1>Recommendations</h1>
+            <h4>Amet minim mollit non deserunt ullamco est sit aliqua dolor do Amet <br>sint Velit officia consequat duis
+                enim velit mollit. lorem ipsum</h4>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="testimonials-container">
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- This is the contact component code -->
+     <div class="contact">
+        <div class="leave-info">
+        <h1>Leave Your Info</h1>
+        <div class="form-container">
+            <form id="contactForm" action="#" method="post" novalidate>
+                <div class="form-group">
+                    <label for="name">Your Full Name (Required)</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <small class="error-message"></small>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Your Email (Required)</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <small class="error-message"></small>
+                </div>
+    
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <small class="error-message"></small>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <small class="error-message"></small>
+                </div>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        </div>
+        <div class="contact-info">
+            <h1> Contact Us</h1>
+            <img src="./Assets/Contact/contact-address.svg">
+            <img src="./Assets/Contact/contact-mail.svg">
+            <img src="./Assets/Contact/contact-phone.svg">
+        </div>
+     </div>
+     <!-- This is the code for the Footer Section of the website -->
+      <div class="footer">
+        <div class="footer-parents-icon">
+            <img src="./Assets/Footer/Frame1.svg">
+            <img src="./Assets/Footer/Frame2.svg">
+            <img src="./Assets/Footer/Frame3.svg">
+            <img src="./Assets/Footer/Frame (4).svg">
+
+        </div>
+        <div class="footer-nav-icon">
+            <img src="./Assets/Footer/Logo1.svg">
+        </div>
+        <div class="footer-content">
+            <div class="footer-child-icon">
+                <img src="./Assets/Footer/Dribble.svg">
+                <img src="./Assets/Footer/Fiverr.svg">
+                <img src="./Assets/Footer/Upwork.svg">
+            </div>
+            <div class="footer-quicklink">
+                <h3>Quick Links</h3>
+                <span>Home </span>
+                <span>Skills</span>
+                <span>Educations</span>
+                <span>Projects</span>
+                <span>Recommendations</span>
+            </div>
+            <div class="footer-portfolio">
+                <h3>Portfolio</h3>
+                <span>Front-end Development</span>
+                <span>Backend Development</span>
+                <span>Website Design</span>
+                <span>Machine Learning</span>
+                <span>Problem Solving &DSA</span>
+            </div>
+            <div class="footer-connect">
+                <h3>Connect</h3>
+                <img src="./Assets/Footer/LinkedIn.svg">
+                <img src="./Assets/Footer/Instagram.svg">
+                <img src="./Assets/Footer/Facebook.svg">
+            </div>
+        </div>
+        <div class="last">
+            <img src="./Assets/Footer/Frame 270.svg">
+        </div>
+      </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>

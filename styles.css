@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+/* Navbar container */
+nav {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    height: 152px;
+    padding: 38px 96px;
+    gap: 0;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
+}
+
+
+/* Logo/Image container */
+.icons img {
+    width: 158px;
+    height: 76px;
+    top: 38px;
+    left: 96px;
+    gap: 0;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    width: 604px;
+    height: 37px;
+    gap: 35px;
+    margin-top: 16px;
+}
+
+/* Styling individual links */
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.nav-links a.active {
+    background-color: #FFB400;
+    color: black;
+    /* Tomato color on hover */
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    background-color: #FFB400;
+    color: black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* This is the Css for the Home component */
+.home {
+    max-width: 1261px;
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    margin-top: 152px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content h3 span {
+    color: #FFB400;
+}
+
+.home-text {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.home-image {
+    max-width: 50%;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    top: 231.59px;
+    left: 631.68px;
+
+}
+
+.content button {
+    background-color: #FFB400;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 132px;
+    min-height: 54px;
+    text-align: center;
+    font-weight: 650;
+}
+
+.text-dot-icons img {
+    position: absolute;
+    left: 5.2vw;
+    top: 88vh;
+    width: 25px;
+    height: 52px;
+}
+
+.text-dot-icons span img {
+    position: absolute;
+    left: 37.2vw;
+    top: 70vh;
+    width: 25px;
+    height: 52px;
+}
+
+.dot-green img {
+    position: absolute;
+    left: 57.2vw;
+    top: 26vh;
+    width: 23px;
+    height: 50px;
+}
+
+.dot-green span img {
+    position: absolute;
+    left: 59.7vw;
+    top: 74vh;
+    width: 23px;
+    height: 50px;
+}
+
+/* Responsive codes for the homepage */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .home .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-text {
+        font-size: 0.9rem;
+    }
+
+    .content button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        display: flex;
+        min-width: 90px;
+
+        justify-content: center;
+        align-items: center;
+        max-height: 10px;
+        font-size: 0.9rem;
+        font-weight: 500;
+
+    }
+
+    .home-image {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .dot-green img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-image img {
+        max-width: 300px;
+    }
+}
+
+/* Here is the css code of the project page which is used for the responsive desgin  */
+.projects {
+    max-width: 1261px;
+    display: flex;
+    flex-direction: column;
+    background: #F0F0F6;
+}
+
+.project-texts {
+    margin: 10px;
+    width: 100%;
+    height: 100.26px;
+    gap: 12px;
+    color: black;
+    text-align: center;
+
+}
+
+.project-texts h4 {
+    color: #767676;
+    margin: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.project-texts h1 {
+    color: black;
+    margin: 18px;
+    /* padding: 10px; */
+}
+
+#card-container {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 30vw;
+}
+
+.card {
+    width: calc(33.33% - 40px);
+    /* Adjust width to account for increased margin */
+}
+
+/* Responsive code for the project components */
+
+@media (max-width: 768px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        background: #F0F0F6;
+        padding: 20px;
+    }
+
+    .project-texts {
+        margin: 5px;
+        width: 100%;
+        height: auto;
+        /* Allow the height to be dynamic for smaller screens */
+        gap: 8px;
+        text-align: center;
+    }
+
+    .project-texts h4 {
+        margin: 10px;
+        margin-bottom: 10px;
+        padding: 8px;
+        font-size: 14px;
+        /* Adjust font size for mobile */
+    }
+
+    .project-texts h1 {
+        margin: 12px;
+        font-size: 18px;
+        /* Adjust font size for mobile */
+    }
+
+    #card-container {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        /* Stack the cards vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+/* Css code for the recommendations page */
+.recommendations {
+    width: 1261px;
+    height: 500.17px;
+    top: 1957.16px;
+    opacity: 1;
+    background: #F0F0F6;
+}
+
+.recom-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* gap: 10px; */
+    padding: 10px;
+    /* margin-bottom: 30px; */
+
+}
+
+.test-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.test-cards h3 {
+    display: flex;
+    /* justify-content: start; */
+    margin-left: 25px;
+}
+
+.test-cards p {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profile-info img {
+    height: 100px !important;
+    width: 70px !important;
+    /* Maintain aspect ratio */
+
+}
+
+.profile-info span h4 {
+    margin: 10px;
+}
+
+.profile-info span h5 {
+    color: #767676;
+    ;
+}
+
+.recom-text h4 {
+    margin: 10px;
+    color: #767676;
+
+}
+
+#testimonials-container {
+    width: 1257px;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 60px;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #F0F0F6;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+
+    height: 327.1px;
+    /* Fixed height */
+    /* left: 463px;        Position from the left */
+
+}
+
+.swiper-slide img {
+    height: 17px;
+    width: 144px;
+    display: flex;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+/* Responsive code for the mobile devices */
+/* Mobile styles (for devices with screen width 768px or smaller) */
+@media only screen and (max-width: 768px) {
+
+    /* Adjusting the container and text for mobile */
+    #testimonials-container {
+        width: 100%;
+        /* flex-direction: column;   */
+        align-items: center;
+        height: 20pc;
+        /* width: 0vw; */
+    }
+
+    .recom-text {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .recom-text h4 {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .recommendations {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+        background: #F0F0F6;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        /* Adjust image height to fit */
+        object-fit: contain;
+        /* Keep the image aspect ratio */
+    }
+}
+
+/* This is the css for the contact page */
+.contact {
+    margin-top: 113px;
+    z-index: 1000;
+    /* position: relative; */
+    background: #F0F0F6;
+    width: 1260px;
+    height: 750.67px;
+    margin-left: 10px;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+}
+
+.leave-info {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.contact-info {
+    width: 30%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-info img {
+    padding: 10px;
+}
+
+.leave-info h1 {
+    margin-top: 27px;
+}
+
+.contact-info h1 {
+    padding: 10px;
+}
+
+
+.form-container {
+    max-width: 900px;
+    height: 616px;
+    margin: 23px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    width: 773.38px;
+    height: 54px;
+    top: 55.06px;
+    left: 36px;
+    /* background: #333; */
+    border-radius: 5px 0px 0px 0px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #F0F0F6;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+    width: 773.38px;
+    height: 210.42px;
+    top: 363.24px;
+    left: 36px;
+    border-radius: 5px 0px 0px 0px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5ab1f3;
+    outline: none;
+}
+
+.submit-btn {
+    font-weight: lighter;
+    display: block;
+    width: 151px;
+    padding: 9px;
+    background-color: #FFB400;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 202px -1px;
+}
+
+.submit-btn:hover {
+    background-color: #4294d3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        margin: 20px;
+        padding: 10px;
+    }
+}
+@media (max-width:768px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* This is styling for the footer page */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F0F0F6;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-parents-icon{
+    justify-content: space-evenly;
+    display: flex;
+    margin-left: 70px;
+}
+.footer-nav-icon{
+    display: flex;
+    justify-content: stretch;
+    margin-left: 76px;
+    margin-bottom: 41px;
+}
+.footer-child-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-quicklink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+.skill{
+    border: 3px solid red;
+    position: absolute;
+    margin-top: 500px;
+}
